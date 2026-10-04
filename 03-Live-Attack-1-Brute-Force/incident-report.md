@@ -9,7 +9,7 @@
 | Severity | Medium |
 | Status | Escalated to Tier 2 |
 | Date detected | 2026-10-02 14:29:14 (UTC+7) |
-| Analyst | [Your name] |
+| Analyst | Adi Ramadhani |
 | Related lab | Live Attack 1 - Brute Force ([README](README.md)) |
 
 ---
