@@ -63,25 +63,9 @@ Panels built for this lab:
 
 ---
 
-## Incident Report - INC-2026-001
+## Incident Report
 
-| Field | Value |
-|---|---|
-| Severity | Medium |
-| Status | Escalated to Tier 2 |
-| Date detected | 2026-10-02 14:29:14 |
-
-**Analyst notes**
-13 instances of Event ID 4625 in a short window, all Logon Type 3 (network logon) from host `kali` (192.168.56.105) against `testuser`. No successful authentication.
-
-**Action taken**
-- Escalated to Tier 2
-- Recommended blocking 192.168.56.105 at the firewall
-- Recommended enabling account lockout policy
-- Flagged `testuser` for continued monitoring
-
-**Verdict**
-True Positive - confirmed brute force attempt.
+Full writeup, including analyst notes and the escalation decision, is in [incident-report.md](incident-report.md) (INC-2026-001).
 
 ---
 
