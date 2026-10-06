@@ -62,6 +62,8 @@ Two panels were added to the SOC dashboard for this one:
 - Suspicious PowerShell execution trend
 - Suspicious PowerShell command details
 
+![SOC dashboard - PowerShell panels](screenshots/dashboard.png)
+
 ---
 
 ## Incident Report
